@@ -80,10 +80,10 @@ def get_comment():
 # create one comment
 def post_comment():
     print(get_token(request))
-    # data['user'] = get_Username(get_token(request))
-    data['user'] = 'TEST'
+    # Username = get_Username(get_token(request))
     # if check_user(Username)
     data = request.get_json()
+    data['user'] = 'Username'
     print(data)
     data['date'] = datetime.datetime.now()
     # if check_owner(Username,itemID)
